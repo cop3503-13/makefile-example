@@ -39,7 +39,7 @@ NYTNewsFeedWidget.o: NYTNewsFeedWidget.cpp ApiWidget.h
 
 
 all:
-	$(g++) *.cpp -o magicmirror
+	$(CC) $(FLAGS) *.cpp -o magicmirror
 
 clean: 
 	\rm -fvr *.o *.out *~ magicmirror
