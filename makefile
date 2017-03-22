@@ -32,9 +32,10 @@ WeatherWidget.o: WeatherWidget.cpp ApiWidget.h
 	$(CC) $(FLAGS) WeatherWidget.cpp -o WeatherWidget.o
 
 StockMarketWidget.o: StockMarketWidget.cpp ApiWidget.h HTTPRequest.h
-	$(CC) $(FLAGS)
+	$(CC) $(FLAGS) StockMarketWidget.cpp -o StockMarketWidget.o
 
- 
+NYTNewsFeedWidget.o: NYTNewsFeedWidget.cpp ApiWidget.h
+	$(CC) $(FLAGS) NYTNewsFeedWidget.cpp -o NYTNewsFeedWidget.o 
 
 
 all:
